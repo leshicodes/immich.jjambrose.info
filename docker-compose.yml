@@ -31,7 +31,11 @@ services:
     healthcheck:
       disable: false
     networks:
-      - default
+      default:
+      mediaserver_network:
+        aliases:
+          - immich_server
+          - immich-server
 
   immich-machine-learning:
     container_name: immich_machine_learning
