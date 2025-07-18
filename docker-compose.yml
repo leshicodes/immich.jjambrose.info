@@ -87,7 +87,7 @@ services:
     image: ghcr.io/immichframe/immichframe:latest
     restart: on-failure
     volumes:
-      - PATH/TO/CONFIG:/app/Config
+      - /data/container-configs/immich/immichframe:/app/Config
     ports:
       - "2284:8080"
 
