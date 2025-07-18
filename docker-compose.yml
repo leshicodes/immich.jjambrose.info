@@ -90,6 +90,8 @@ services:
       - /data/container-configs/immich/immichframe:/app/Config
     ports:
       - "2284:8080"
+    env_file:
+      - .env
 
 volumes:
   model-cache:
