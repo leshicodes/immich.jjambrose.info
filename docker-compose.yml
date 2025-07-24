@@ -82,16 +82,16 @@ services:
     restart: always
 
 
-  immichframe:
-    container_name: immichframe
-    image: ghcr.io/immichframe/immichframe:latest
-    restart: on-failure
-    volumes:
-      - /data/container-configs/immich/immichframe:/app/Config
-    ports:
-      - "2284:8080"
-    env_file:
-      - .env
+  # immichframe:
+  #   container_name: immichframe
+  #   image: ghcr.io/immichframe/immichframe:latest
+  #   restart: on-failure
+  #   volumes:
+  #     - /data/container-configs/immich/immichframe:/app/Config
+  #   ports:
+  #     - "2284:8080"
+  #   env_file:
+  #     - .env
 
 volumes:
   model-cache:
